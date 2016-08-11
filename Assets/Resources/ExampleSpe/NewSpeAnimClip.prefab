@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: NewSpeAnimClip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc93509a7d1ac104fa9a20b1064fd843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 0
+  previewAnimClipPath: Assets/Resources/Art/Objects/character/Player02/Attack/Player02_Attack_HandGun.FBX
+  audioList:
+  - desc: 
+    localOffsetPos: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+    bindingTargetPath: Bip01/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle/Bip01
+      R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1
+    deathType: 0
+    startTime: 0
+    length: .272000015
+    obj: {fileID: 8300000, guid: 4ecb26c462ed72b4dbfba168ff91e2fa, type: 3}
+  - desc: 
+    localOffsetPos: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+    bindingTargetPath: 
+    deathType: 0
+    startTime: .403333336
+    length: .0920000002
+    obj: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
+  effectList:
+  - desc: 
+    localOffsetPos: {x: -.0135117099, y: .00621432858, z: .0421928279}
+    localRotation: {x: .456756413, y: -.507424772, z: -.36673528, w: .631980181}
+    localScale: {x: .311178088, y: .200528204, z: .484458685}
+    bindingTargetPath: Bip01/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle/Bip01
+      R UpperArm/Bip01 R Forearm/Bip01 R Hand
+    deathType: 1
+    startTime: .338104069
+    length: 1
+    obj: {fileID: 133940, guid: f77b8510df4bb2848beb20c5db2a3b62, type: 2}
+  - desc: 
+    localOffsetPos: {x: -1.47401106, y: .139614165, z: .59421587}
+    localRotation: {x: .0193837341, y: .109470919, z: .00428668596, w: .993791759}
+    localScale: {x: 1, y: 1, z: 1}
+    bindingTargetPath: Bip01/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 L Clavicle/Bip01
+      L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger2/Bip01 L Finger21
+    deathType: 0
+    startTime: 0
+    length: 1.70333338
+    obj: {fileID: 100002, guid: bf939673f0d2a904da216e19d8f25b89, type: 2}
+  - desc: 
+    localOffsetPos: {x: -1.07221115, y: 2.31447128e-08, z: -.989601493}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+    bindingTargetPath: Bip01/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle
+    deathType: 0
+    startTime: 0
+    length: 1.70333338
+    obj: {fileID: 100002, guid: bf939673f0d2a904da216e19d8f25b89, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

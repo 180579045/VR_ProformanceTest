@@ -1,0 +1,11 @@
+XPox: 243
+YPox: 258
+Width: 774
+Height: 476
+DivisionInfo:
+- SpliterID: "资源检查工具_HSpliterCtrl_16"
+  SpliterPath: "资源检查工具_HSpliterCtrl_16"
+  SplitOffset: 30
+- SpliterID: "资源检查工具_VSpliterCtrl_23"
+  SpliterPath: "资源检查工具_HSpliterCtrl_16/资源检查工具_VSpliterCtrl_23"
+  SplitOffset: 300

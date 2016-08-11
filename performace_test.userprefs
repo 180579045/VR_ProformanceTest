@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="performace_test.CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportGeneration\BRT_UnityBuildSettingsUtility.cs">
+    <Files>
+      <File FileName="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportGeneration\BRT_UnityBuildSettingsUtility.cs" Line="249" Column="64" />
+      <File FileName="Assets\a_project_fonder\script\cubeRotate.cs" Line="6" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

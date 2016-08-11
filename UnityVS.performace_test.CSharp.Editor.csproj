@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{821D8F15-E183-2F44-CA58-89185EC167FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;NGUI_3_5_8</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;NGUI_3_5_8</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WP8.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WP8.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Metro.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Metro.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.BB10.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.BB10.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="TextureOverview">
+      <HintPath>Assets\H3DTech\Editor\ThirdParty\TextureOverview\TextureOverview.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeImageNET">
+      <HintPath>Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\FreeImageNet\FreeImageNET.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet">
+      <HintPath>Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\YamlDotNet\YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <HintPath>Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Messaging">
+      <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityVS.VersionSpecific">
+      <HintPath>Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\Networking\Editor\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityVS.performace_test.CSharp.csproj">
+      <Project>{5030763B-ED0D-1666-263A-BB7CFB8FCB5D}</Project>
+      <Name>UnityVS.performace_test.CSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\NewBehaviourScript.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\AssetImporterProcesser.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DAssetChecker.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DAssetCheckerConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DAssetCheckerFramework.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DAssetCheckerUtil.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DAssetPathChecker.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DFBXImportMaterialImportChecker.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DFBXImportScaleFactorChecker.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DMaterialPathChecker.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DMaterialShaderChecker.cs" />
+    <Compile Include="Assets\H3DTech\Editor\AssetChecker\H3DTextureFormatCheckerForTDemoShooter.cs" />
+    <Compile Include="Assets\H3DTech\Editor\Inspectors\H3DInspectorTool.cs" />
+    <Compile Include="Assets\H3DTech\Editor\Inspectors\H3DScrollViewInspector.cs" />
+    <Compile Include="Assets\H3DTech\Editor\Inspectors\H3DUIPrefabNodeInspector.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\Cmd.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\Controller.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\EditorComSelector.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\EditorTreeView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\Layout.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\LayoutEditorGUI.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\LayoutEditorGUIStyle.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\LayoutEditorWindow.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\LayoutManager.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\Main.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\MainView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\ResDialog.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\Tool.cs" />
+    <Compile Include="Assets\H3DTech\Editor\LayoutEditor\Scripts\Editor\UIInspector.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\BRT_VersionInfo.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Options\BRT_FileFilters.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Options\BRT_FiltersUsed.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Options\BRT_Options.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportData\BRT_AssetList.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportData\BRT_BuildInfo.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportData\BRT_BuildPlatformType.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportData\BRT_BuildSettingsCategoryType.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportData\BRT_SizePart.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportData\BRT_UnityBuildSettings.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportGeneration\BRT_ReportGenerator.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\ReportGeneration\BRT_UnityBuildSettingsUtility.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Utility\BRT_LibCacheUtil.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Utility\BRT_Util.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Utility\DldUtil_BigFileReader.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Utility\DldUtil_GetRspDefines.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Utility\DldUtil_TraverseDirectory.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\BRT_BuildReportWindow.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\BRT_WindowLabels.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\BRT_WindowSettings.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\BRT_WindowUtility.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_AssetListScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_BaseScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_BuildSettingsScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_HelpScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_OptionsScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_OverviewScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\Scripts\Editor\Window\Screen\BRT_SizeStatsScreen.cs" />
+    <Compile Include="Assets\H3DTech\Editor\ThirdParty\TextureOverview\TextureOverviewMenuItem.cs" />
+    <Compile Include="Assets\H3DTech\Editor\TrailRender\H3DTraiRendererMenuItem.cs" />
+    <Compile Include="Assets\H3DTech\Editor\TrailRender\H3DTrailRenderEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Command\EditorCommandManager.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ButtonCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\CollectionCtrlBase.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ColorCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ComboBoxCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ControlMessage.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\CurveEditorCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\DataFieldCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\EditorControl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\HBoxCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\HSpliterCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\HelpBoxCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\InspectorViewCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\LabelCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\LayerFieldCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\LayoutConstraint.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ListViewCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\MainViewCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\MaskFieldCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ObjectFieldCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\PasswordFieldCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\PlayCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\SelectionGridCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\SliderCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\SpaceCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\SpliterCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TabViewCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TagFieldCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TextAreaCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TextBoxCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TextureBoxCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TimeLineViewCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ToggleCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\ToolBarCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\TreeViewCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\VBoxCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Control\VSpliterCtrl.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\EditorCoroutine.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\EditorHelper.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\EditorManager.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\EditorRenderer.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\EditorRoot.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\EditorDrawGeometryTool.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\GeometryMeshManager.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Mesh\GeometryMesh.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Mesh\RingMesh.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Mesh\SectorMesh.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Mesh\TaperMesh.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\AxisObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\CompositeGeoometryObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\CubeObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\CylinderObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\GeometryObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\RingObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\SectorObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\SphereObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\TaperObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Object\TextObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Layout\EditorLayout.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\SharpZipLib\SharpZIp.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Tools\Drawing.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\UnityInternalIconCache.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\UniversalEditorLog.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\UniversalEditorUtility.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\BoundsFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ButtonRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ColorCtrlRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ComboBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\CurveEditorRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\EditorRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\EnumComBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\EnumMaskFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\FloatFieldRenderStategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\FloatSliderRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\FocusRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\HBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\HSpliterRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\HelpBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\InspectorRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\IntFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\IntSliderRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\LabelCtrlRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\LayerFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ListViewRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\MainViewRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\MaskFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\MinMaxSliderRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ObjectFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\PasswordFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\PlayCtrlRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\RectFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\SelectionGridRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\SpaceRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TabViewRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TagFieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TextAreaRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TextBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TextureBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TimeLineViewRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ToggleRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\ToolBarRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\TreeViewRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\VBoxRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\VSpliterRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\Vector2FieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\Vector3FieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\CtrlRenderStrategy\Vector4FieldRenderStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\DestroyStrategy\EditorDestroyStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\DestroyStrategy\MainViewDestroyStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\DestroyVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\EditorCtrlVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\EditorRenderVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\FindControlByNameVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\FindControlByTypeVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\LayoutUpdateVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\ResetTriggerInfoVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\TriggerVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\UpdateStrategy\EditorUpdateStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\UpdateStrategy\PlayCtrlUpdateStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\Base\Visitor\UpdateVisitor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\PackageExportTool\PackageAssets.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\PackageExportTool\PackageExportConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\PackageExportTool\PackageExportTool.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\PackageExportTool\PackageExportToolModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\ResourceManageTool\ResourceManageConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\ResourceManageTool\ResourceManageConfigTool.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\ResourceManageTool\ResourceManageToolController.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\ResourceManageTool\ResourceManageToolModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\ResourceManageTool\ResourceManageToolUtility.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\ResourceManageTool\U3DAssetDB\U3DAssetDB.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SceneExport\SceneExportEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SearchSprite\AtlasAnalyziser.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SearchSprite\SearchSpriteEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SearchSprite\SearchSpriteEditorModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SearchSprite\UtilityForNGUI.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectAnimClipEditor\SpecialEffectAnimClipEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectAnimClipEditor\SpecialEffectAnimClipEditorCommandManager.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectAnimClipEditor\SpecialEffectAnimClipEditorCommands.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectAnimClipEditor\SpecialEffectAnimClipEditorModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectAnimClipEditor\SpecialEffectAnimClipProxy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditorCommand.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditorConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditorModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditorOption.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditorStyle.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectEditorUtility.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectInspector.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\SpecialEffectEditor\SpecialEffectMenuItems.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasConsistencyAnalyser.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasCosistencyExporter.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasProject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasReferenceAnalyser.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasReferenceExporter.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasReferenceFilter.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasSerializeObject.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasSpriteImage.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\AtlasSpriteImageConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\CSVOperator.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\DefaultSpriteImageProcessStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\DefaultTexturePackagingStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\ISpriteImageProcessStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\ITexturePackagingStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\NGUITexturePackagingStrategy.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\UIAtlasAPIForNGUI.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\UIAtlasEditorConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\UIAtlasOperateProgress.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\UIAtlasOperateUtility.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\UIAtlasTempTextureManager.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\Win32Dialog.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\YAMLAnalyser.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIAdjustAtlas\UIAdjustAtlasConfig.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIAdjustAtlas\UIAdjustAtlasEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIAdjustAtlas\UIAdjustAtlasEditorCommand.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIAdjustAtlas\UIAdjustAtlasEditorModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIMakeAtlas\AtlasDialog.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIMakeAtlas\UIAtlasEditor.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIMakeAtlas\UIAtlasEditorCommand.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\UIMakeAtlas\UIAtlasEditorModel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\Editor\NGUISelectHelper.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIButton.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIComboBox.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIContextMenu.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIControlView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIInput.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UILabel.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIListView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIScrollBar.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIScrollView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UISplitView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UITabView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UITreeView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Controls\UIWindow.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\H3DGraph.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\Sample\SampleView.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\UIApplication.cs" />
+    <Compile Include="Assets\H3DTech\Editor\UniversalEditor\WidgetSelectHelper\EditorUIKit\Editor\UIView.cs" />
+    <Compile Include="Assets\H3DTechExample\ForEditor\Editor\CustomControl\ControlTestEditor.cs" />
+    <Compile Include="Assets\H3DTechExample\ForEditor\Editor\CustomControl\ControlTestEditor2.cs" />
+    <Compile Include="Assets\H3DTechExample\ForEditor\Editor\CustomControl\CtrlEnableTestEditor.cs" />
+    <Compile Include="Assets\H3DTechExample\ForEditor\Editor\CustomControl\CtrlFocusTestEditor.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\BMFontReader.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\ComponentSelector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateDrawer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\FreeType.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIContextMenu.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorExtensions.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHandles.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHelp.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIJson.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIMenu.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUISettings.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUISnap.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\PropertyBindingEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\SpriteSelector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenAlphaEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenColorEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenFOVEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenHeightEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenPositionEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenRotationEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenScaleEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenTransformEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenVolumeEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TweenWidthEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\TypewriterEffectEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UI2DSpriteEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIAnchorEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonColorEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonKeysEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonMessageEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICameraEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICameraTool.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIColorPickerEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIDragObjectEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallViewer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIEventTriggerEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIFontInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIFontMaker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIForwardEventsEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIGridEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIInputEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UILabelInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UILocalizeEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelTool.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPlayTweenEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPrefabTool.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIProgressBarEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIRectEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIRootEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollBarEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollViewEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISliderEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISnapshotPointEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIStretchEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITableEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITextureInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITexturePacker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIToggleInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITweenerEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
+    <None Include="Assets\a_project_fonder\ptmy1.0.shader" />
+    <None Include="Assets\a_project_fonder\ptmy2.0.shader" />
+    <None Include="Assets\a_project_fonder\Resources\performance_shader_0.shader" />
+    <None Include="Assets\a_project_fonder\Resources\performance_shader_1.shader" />
+    <None Include="Assets\a_project_fonder\Resources\performance_shader_2.shader" />
+    <None Include="Assets\a_project_fonder\Resources\performance_shader_3.shader" />
+    <None Include="Assets\a_project_fonder\Resources\performance_shader_grid.shader" />
+    <None Include="Assets\H3DTech\Editor\LayoutEditor\Examples\Atlas\UICommonAtlas.txt" />
+    <None Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\README.txt" />
+    <None Include="Assets\H3DTech\Editor\ThirdParty\BuildReport\VERSION.txt" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\Config\PublishMode.xml" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\GrawGeometryTool\Data\3DTextShader.shader" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\FreeImageNet\FreeImageNET.XML" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\YamlDotNet\YamlDotNet.xml" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Data\Resources\UIAtlasPreviewShader.shader" />
+    <None Include="Assets\H3DTech\ReleaseNote.txt" />
+    <None Include="Assets\H3DTech\Resources\Shader\FrameAnimation(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\FrameAnimation(Alpha Blend).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3D_Outline.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3D_ShadowCaster.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DAnimBumpDistort.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DBumpDiffuse(dynamic).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DBumpDiffuse(static object support lightmap).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DBumpSpecular(dynamic).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DBumpSpecular(static object support lightmap).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DFocusCameraEffect.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DFramework.cginc" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DGodRays.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DHighLightAnim(Additive static).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DHighLightAnim(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DHighLightAnim(Multiply).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DParticleAddtive.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DParticleAlphaBlend.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectBumpSpec 2.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectBumpSpec.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectBumpSpecTransparent.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectionEffect(Diffuse).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectionEffect(Unlit).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflective(Additive dynamic).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflective(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflective(Multiply).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectiveSpecularTransparent(static).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectiveSurfReflectivity(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectiveSurfReflectivity(Multiply).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DReflectiveSurfReflectivityTransparent(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DRimHighLight.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DRimHighLightTransparent.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DRimLight.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DRimLightTransparent(Rim Alpha).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DRimLightTransparent.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DSimpleDiffuse(unlit).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DSimpleDiffuse(vertxlit cast shadow).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DT4MTextures2Unlit.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DT4MTextures3Unlit.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DT4MTextures4Unlit.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DT4MTextures5Unlit.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DT4MTextures6Unlit.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuse(Cast Shadow).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuse(Outline).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuse(Support Lightmap Receive Shadows ).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuse(Support Lightmap Receive Shadows Outline).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuse(Support Lightmap Receive Shadows Two Side).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuse.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuseLightmap.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitDiffuseTwoSide.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflective(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflective(charactor twoside).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflective.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflectiveHighLight(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflectiveHightLight.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflectiveTwoSide(Additive).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitReflectiveTwoSideTransparent.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitScroll2LayersSineAddtive.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitScroll2LayersSineAlphaBlend.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparent(Depth Test).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparent.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentDiffuse(Receive Shadows ).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentDiffuse(Receive Shadows Two Side ).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentDiffuse(Two Side).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentDiffuse.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentReflective(Two Side).shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentReflective.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DUnlitTransparentTwoSide.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\H3DWaterWiggle.shader" />
+    <None Include="Assets\H3DTech\Resources\Shader\MotionBlur.shader" />
+    <None Include="Assets\H3DTechConfig\H3DTechPublishEditor\PackageExportInfoConfig.xml" />
+    <None Include="Assets\H3DTechConfig\H3DTechPublishEditor\PackageExportTool.xml" />
+    <None Include="Assets\H3DTechConfig\LayoutEditor\global_config.xml" />
+    <None Include="Assets\H3DTechConfig\UIAtlasEditor\UIAtlasConfig.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+    <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+    <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+    <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+    <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+    <None Include="Assets\NGUI\ReadMe - 3.8.2.txt" />
+    <None Include="Assets\NGUI\ReadMe - 3.9.0.txt" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\H3DTech\Editor\ThirdParty\TextureOverview\TextureOverview.dll" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\FreeImageNet\FreeImageNET.dll" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\SharpZipLib\ICSharpCode.SharpZipLib.dll" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\Base\ThirdParty\YamlDotNet\YamlDotNet.dll" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\System.Deployment.dll" />
+    <None Include="Assets\H3DTech\Editor\UniversalEditor\UIAtlasEditor\Common\System.Windows.Forms.dll" />
+    <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
+    <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
+    <None Include="Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll" />
+    <None Include="D:\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll" />
+    <None Include="D:\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll" />
+    <None Include="D:\Unity\Editor\Data\UnityExtensions\Unity\Networking\Editor\UnityEditor.Networking.dll" />
+    <None Include="D:\Unity\Editor\Data\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>
