@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#define NGUI_3_5_8 
+using UnityEngine;
 using System.Collections;
 using UnityEditor;
 using System.Collections.Generic;

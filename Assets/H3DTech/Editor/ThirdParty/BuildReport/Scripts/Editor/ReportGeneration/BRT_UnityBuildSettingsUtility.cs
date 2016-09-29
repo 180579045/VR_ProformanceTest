@@ -386,8 +386,8 @@ public static class UnityBuildSettingsUtility
 		// BlackBerry only build settings
 		// ---------------------------------------------------------------
 
-		settings.BlackBerryBuildSubtarget = EditorUserBuildSettings.blackberryBuildSubtarget.ToString();
-		settings.BlackBerryBuildType = EditorUserBuildSettings.blackberryBuildType.ToString();
+		//settings.BlackBerryBuildSubtarget = EditorUserBuildSettings.blackberryBuildSubtarget.ToString();
+		//settings.BlackBerryBuildType = EditorUserBuildSettings.blackberryBuildType.ToString();
 #if (UNITY_5||UNITY_5_1||UNITY_5_1_0)
 					
 #else
@@ -395,19 +395,19 @@ public static class UnityBuildSettingsUtility
 #endif
 		
 
-		settings.BlackBerryDeviceAddress = PlayerSettings.BlackBerry.deviceAddress;
-
-		settings.BlackBerrySaveLogPath = PlayerSettings.BlackBerry.saveLogPath;
-		settings.BlackBerryTokenPath = PlayerSettings.BlackBerry.tokenPath;
-
-		settings.BlackBerryTokenAuthor = PlayerSettings.BlackBerry.tokenAuthor;
-		settings.BlackBerryTokenExpiration = PlayerSettings.BlackBerry.tokenExpires;
-
-		settings.BlackBerryHasCamPermissions = PlayerSettings.BlackBerry.HasCameraPermissions();
-		settings.BlackBerryHasMicPermissions = PlayerSettings.BlackBerry.HasMicrophonePermissions();
-		settings.BlackBerryHasGpsPermissions = PlayerSettings.BlackBerry.HasGPSPermissions();
-		settings.BlackBerryHasIdPermissions = PlayerSettings.BlackBerry.HasIdentificationPermissions();
-		settings.BlackBerryHasSharedPermissions = PlayerSettings.BlackBerry.HasSharedPermissions();
+// 		settings.BlackBerryDeviceAddress = PlayerSettings.BlackBerry.deviceAddress;
+// 
+// 		settings.BlackBerrySaveLogPath = PlayerSettings.BlackBerry.saveLogPath;
+// 		settings.BlackBerryTokenPath = PlayerSettings.BlackBerry.tokenPath;
+// 
+// 		settings.BlackBerryTokenAuthor = PlayerSettings.BlackBerry.tokenAuthor;
+// 		settings.BlackBerryTokenExpiration = PlayerSettings.BlackBerry.tokenExpires;
+// 
+// 		settings.BlackBerryHasCamPermissions = PlayerSettings.BlackBerry.HasCameraPermissions();
+// 		settings.BlackBerryHasMicPermissions = PlayerSettings.BlackBerry.HasMicrophonePermissions();
+// 		settings.BlackBerryHasGpsPermissions = PlayerSettings.BlackBerry.HasGPSPermissions();
+// 		settings.BlackBerryHasIdPermissions = PlayerSettings.BlackBerry.HasIdentificationPermissions();
+// 		settings.BlackBerryHasSharedPermissions = PlayerSettings.BlackBerry.HasSharedPermissions();
 	}
 
 

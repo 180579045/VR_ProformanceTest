@@ -1,8 +1,12 @@
-﻿using System;
+﻿#define NGUI_3_5_8
+
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.Xml;
+
+
 
 // cmd接口 注意：在add到manager时会execute一次!!!
 public interface ICmd
@@ -359,7 +363,7 @@ public class CmdManager
                 p.RebuildAllDrawCalls();
             }
 #else
-            UIPanel.SetDirty();
+            //UIPanel.SetDirty();
 #endif
             // sprite 实时刷新
 

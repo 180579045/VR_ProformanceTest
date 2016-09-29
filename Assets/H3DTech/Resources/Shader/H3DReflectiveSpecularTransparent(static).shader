@@ -1,4 +1,6 @@
-﻿Shader "H3D/InGame/SceneStaticObjects/ReflectiveSpecularTransparent" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+Shader "H3D/InGame/SceneStaticObjects/ReflectiveSpecularTransparent" {
 
    Properties 
 	{
@@ -63,7 +65,7 @@
 					o.ruv = H3DObjSpaceSphereMapUV(v.vertex,v.normal);
 					
 					o.worldNormal = UnityObjectToWorldNormal(v.normal);
-					float3 worldPos = mul(_Object2World, v.vertex).xyz;
+					float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 					float3 viewDirForLight = UnityWorldSpaceViewDir(worldPos);
                     float3 worldLightDir   = UnityWorldSpaceLightDir(worldPos);
                     viewDirForLight = normalize(normalize(viewDirForLight) + normalize(worldLightDir));

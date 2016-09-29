@@ -1,4 +1,6 @@
-﻿
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+
 Shader "H3D/InGame/SceneStaticObjects/BumpDiffuse(support lightmap)" {
 	Properties {
 		
@@ -57,7 +59,7 @@ Shader "H3D/InGame/SceneStaticObjects/BumpDiffuse(support lightmap)" {
 	            o.pack0.xy  = TRANSFORM_TEX(v.texcoord,_MainTex);
                 o.pack0.zw  = TRANSFORM_TEX(v.texcoord,_BumpMap);
                 
-                float3 worldPos = mul(_Object2World, v.vertex).xyz;
+                float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);
                 fixed3 worldTangent = UnityObjectToWorldDir(v.tangent.xyz);
                 fixed3 worldBinormal = cross(worldNormal, worldTangent) * v.tangent.w;

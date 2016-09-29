@@ -1,4 +1,6 @@
-﻿
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+
 #ifndef H3D_FIRMWORK_INCLUDED
 #define H3D_FIRMWORK_INCLUDED
 #include "UnityCG.cginc"
@@ -107,7 +109,7 @@ inline fixed3 H3DLightingBPhong (half3 normal,half3 viewDir, half3 lightDir)
 
 #define H3D_LIGHT_COODS(indx1) fixed3 _vlight : TEXCOORD##indx1;
 #define H3D_LAMBERT_LIGHT(o) \
-	float3 worldPos = mul(_Object2World, v.vertex).xyz;\
+	float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;\
 	fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);\
 	o._vlight = ShadeSH9 (float4(worldNormal,1.0));\
 	o._vlight += H3DLightingLambert (worldNormal, _WorldSpaceLightPos0.xyz);\
@@ -117,7 +119,7 @@ inline fixed3 H3DLightingBPhong (half3 normal,half3 viewDir, half3 lightDir)
     unity_4LightAtten0, worldPos, worldNormal)
     
 #define H3D_BLINNPHONG_LIGHT(o) \
-	float3 worldPos = mul(_Object2World, v.vertex).xyz;\
+	float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;\
 	fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);\
 	fixed3 worldViewDir = normalize(UnityWorldSpaceViewDir(worldPos));\
 	o._vlight = ShadeSH9 (float4(worldNormal,1.0));\
